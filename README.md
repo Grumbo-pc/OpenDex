@@ -1,7 +1,5 @@
 # OpenDex
 
-Android desktop mode client for PC, similar to how Samsung DeX used to function on PC before it was discontinued.
-
 OpenDex is a Windows desktop client for using an Android phone in a desktop-style window over ADB and scrcpy. It can request Samsung-style desktop mode when the device firmware supports it, while retaining normal scrcpy mirroring as a fallback.
 
 ## Features
