@@ -1,104 +1,50 @@
-<div style="display:flex;">
-  <img src="https://cdn.jsdelivr.net/gh/viarotel/resources@latest/logos/escrcpy.png" alt="viarotel-escrcpy" width="108px">
-</div>
+# OpenDex
 
-# Escrcpy
-
-[![GitCode](https://gitcode.com/viarotel-org/escrcpy/star/badge.svg)](https://gitcode.com/viarotel-org/escrcpy)
-[![Gitee](https://gitee.com/viarotel-org/escrcpy/badge/star.svg?theme=dark)](https://gitee.com/viarotel-org/escrcpy)
-[![GitHub](https://img.shields.io/github/stars/viarotel-org/escrcpy?label=Github%20Stars)](https://github.com/viarotel-org/escrcpy)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/viarotel-org/escrcpy)
-[![zread](https://img.shields.io/badge/Ask_Zread-_.svg?style=flat&color=00b0aa&labelColor=000000&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuOTYxNTYgMS42MDAxSDIuMjQxNTZDMS44ODgxIDEuNjAwMSAxLjYwMTU2IDEuODg2NjQgMS42MDE1NiAyLjI0MDFWNC45NjAxQzEuNjAxNTYgNS4zMTM1NiAxLjg4ODEgNS42MDAxIDIuMjQxNTYgNS42MDAxSDQuOTYxNTZDNS4zMTUwMiA1LjYwMDEgNS42MDE1NiA1LjMxMzU2IDUuNjAxNTYgNC45NjAxVjIuMjQwMUM1LjYwMTU2IDEuODg2NjQgNS4zMTUwMiAxLjYwMDEgNC45NjE1NiAxLjYwMDFaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik00Ljk2MTU2IDEwLjM5OTlIMi4yNDE1NkMxLjg4ODEgMTAuMzk5OSAxLjYwMTU2IDEwLjY4NjQgMS42MDE1NiAxMS4wMzk5VjEzLjc1OTlDMS42MDE1NiAxNC4xMTM0IDEuODg4MSAxNC4zOTk5IDIuMjQxNTYgMTQuMzk5OUg0Ljk2MTU2QzUuMzE1MDIgMTQuMzk5OSA1LjYwMTU2IDE0LjExMzQgNS42MDE1NiAxMy43NTk5VjExLjAzOTlDNS42MDE1NiAxMC42ODY0IDUuMzE1MDIgMTAuMzk5OSA0Ljk2MTU2IDEwLjM5OTlaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik0xMy43NTg0IDEuNjAwMUgxMS4wMzg0QzEwLjY4NSAxLjYwMDEgMTAuMzk4NCAxLjg4NjY0IDEwLjM5ODQgMi4yNDAxVjQuOTYwMUMxMC4zOTg0IDUuMzEzNTYgMTAuNjg1IDUuNjAwMSAxMS4wMzg0IDUuNjAwMUgxMy43NTg0QzE0LjExMTkgNS42MDAxIDE0LjM5ODQgNS4zMTM1NiAxNC4zOTg0IDQuOTYwMVYyLjI0MDFDMTQuMzk4NCAxLjg4NjY0IDE0LjExMTkgMS42MDAxIDEzLjc1ODQgMS42MDAxWiIgZmlsbD0iI2ZmZiIvPgo8cGF0aCBkPSJNNCAxMkwxMiA0TDQgMTJaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik00IDEyTDEyIDQiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K&logoColor=ffffff)](https://zread.ai/viarotel-org/escrcpy)
-
-📱 Display and control your Android device graphically with scrcpy. [中文文档](https://github.com/viarotel-org/escrcpy/blob/main/README-CN.md)
-
-<div style="display:flex;">
-  <img src="https://cdn.jsdelivr.net/gh/viarotel/resources@latest/screenshots/escrcpy/en-US/overview.png?version=3.0.8" alt="viarotel-escrcpy" width="100%">
-</div>
-
-<sub>Escrcpy focuses on a stable integration foundation; some advanced features come from the private extension repository EscrcpyX and are offered on a paid basis.</sub>
+OpenDex is a Windows desktop client for using an Android phone in a desktop-style window over ADB and scrcpy. It can request Samsung-style desktop mode when the device firmware supports it, while retaining normal scrcpy mirroring as a fallback.
 
 ## Features
 
-- 🖥️ **Inset Mirror**: Dedicated embedded window, auto-fits screen resolution and orientation, with integrated one-tap shortcuts
-- ⌨️ **Keyboard Mapping**: Configure touch, joystick, swipe, scroll, and automation mappings directly on the embedded mirror
-- 🔄 **Multi-Device Control**: Control multiple devices simultaneously in a single window, broadcast input, with batch screenshot and APK install support
-- 🎛️ **Integrated Control Bar**: Compact, draggable sidebar with reorderable controls: rotation, screenshot, apps, files, terminal, AI assistant, and automation
-- 🤖 **Copilot**: AI assistant built on MCP protocol for intelligent Android device control with multi-model chat support
-- 🏃 **Automation Script**: Visual step-by-step workflow orchestration with screen image recognition and batch execution across multiple devices
-- 🪟 **Multi-Device Management**: Visual window orchestration for centralized management of all connected devices
-- 📡 **Wireless Connection**: Wireless ADB connections with LAN auto-discovery and Gnirehtet reverse tethering support
-- 🔑 **Shortcut Management**: Customizable global hotkeys for quick device operations
-- ⚡ **Scrcpy Core**: High-performance, low-latency screen mirroring and control
+- USB Android device discovery through ADB
+- Samsung desktop-mode request with a configurable virtual display
+- Mouse and keyboard forwarding through scrcpy
+- Drag-and-drop file transfer to `/sdcard/Download/`
+- Configurable resolution, frame rate, bitrate, and executable paths
+- Local-only operation with no account, analytics, or cloud service
 
-## Installation
+Samsung desktop mode is device- and firmware-dependent. OpenDex is not affiliated with, sponsored by, or endorsed by Samsung Electronics. The Samsung and DeX names are used only to describe compatibility.
 
-### Manual Installation via Released Packages
+## Requirements
 
-Check the [Releases Page](https://github.com/viarotel-org/escrcpy/releases)
+- Windows 10 or Windows 11
+- An Android device with Developer options and USB debugging enabled
+- A USB connection and an approved Android debugging authorization
 
-### macOS Installation via Homebrew
+The Windows build includes scrcpy 4.1 and compatible ADB files. Do not install or use the bundled tools separately unless you understand their licenses and security implications.
 
-Refer to [homebrew-escrcpy](https://github.com/viarotel-org/homebrew-escrcpy)
+## Development
 
-## Documentation
+```powershell
+npm install
+npm run tauri dev
+```
 
-- [Getting Started](https://viarotel.eu.org/guide/started)
-- [Shortcuts](https://viarotel.eu.org/reference/scrcpy/shortcuts)
-- [Device Operations](https://viarotel.eu.org/guide/operation)
-- [Preferences](https://viarotel.eu.org/guide/preferences)
-- [Reverse Tethering](https://viarotel.eu.org/reference/gnirehtet/)
+Build the frontend and native application:
 
-## For Developers
+```powershell
+npm run build
+npm run tauri build -- --bundles nsis
+```
 
-If you are a developer and wish to run or help improve this project, refer to the [Development Documentation](https://github.com/viarotel-org/escrcpy/blob/main/develop.md)
+The NSIS installer is a Win32 distribution artifact. Microsoft Store publication additionally requires a Partner Center submission, publisher identity, signing, Store metadata, privacy URL, and Microsoft certification. This repository does not contain publisher certificates or signing keys.
 
-## Get Help
+## Privacy and support
 
-As an open-source project powered by passion, support is limited, and updates are irregular.
+OpenDex stores connection preferences locally and communicates directly with the Android device selected by the user. See the [Privacy Policy](PRIVACY.md). Questions and issue reports belong in the [GitHub issue tracker](https://github.com/Grumbo-pc/OpenDex/issues).
 
-- [FAQ](https://viarotel.eu.org/help/escrcpy)
-- [Report Issues](https://github.com/viarotel-org/escrcpy/issues)
-- [Contact Email](mailto:viarotel@qq.com)
+## Third-party software
 
-## What's Next?
+OpenDex bundles scrcpy and Android platform tools. License and attribution information is available in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the bundled `tools/scrcpy/LICENSE.txt` file.
 
-[Milestones](https://viarotel.eu.org/guide/milestones)
+## License
 
-## Acknowledgments
-
-This project owes its existence to the following open-source projects:
-
-- [scrcpy](https://github.com/Genymobile/scrcpy)
-- [adbkit](https://github.com/DeviceFarmer/adbkit)
-- [electron](https://www.electronjs.org/)
-- [vue](https://vuejs.org/)
-- [gnirehtet](https://github.com/Genymobile/gnirehtet/)
-- [yadb](https://github.com/nicepkg/yadb)
-- [tangoadb](https://tangoadb.dev/)
-
-## Friendly Links
-
-- [ADB Device Manager 2](https://github.com/Shrey113/Adb-Device-Manager-2)
-
-## Donate
-
-If this project has helped you, consider buying me a coffee to keep me motivated for further improvements 😛
-
-<div style="display:flex;">
-  <img src="https://cdn.jsdelivr.net/gh/viarotel/resources@latest/donate/viarotel-wepay.png" alt="viarotel-wepay" width="30%">
-  <img src="https://cdn.jsdelivr.net/gh/viarotel/resources@latest/donate/viarotel-alipay.png" alt="viarotel-alipay" width="30%">
-  <a href="https://www.paypal.com/paypalme/viarotel" target="_blank" rel="noopener noreferrer">
-    <img src="https://cdn.jsdelivr.net/gh/viarotel/resources@latest/donate/viarotel-paypal.png" alt="viarotel-paypal" width="30%">
-  </a>
-</div>
-
-You can also support me through the AiFaDian platform.
-
-<div style="display:flex; justify-content:center;"> <a href="https://afdian.com/a/viarotel"><img width="200" src="https://pic1.afdiancdn.com/static/img/welcome/button-sponsorme.png" alt=""></a> </div>
-
-## Contributors
-
-Thanks to all who contributed!
-
-[Contributors](https://github.com/viarotel/escrcpy/graphs/contributors)
+OpenDex source code is distributed by its repository owner. The bundled third-party tools remain under their respective licenses; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
