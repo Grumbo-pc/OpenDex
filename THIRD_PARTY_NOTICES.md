@@ -1,7 +1,8 @@
+OpenDex bundles **scrcpy 4.1** and its user-mode Windows runtime dependencies, including SDL, FFmpeg libraries, and libusb. scrcpy is provided by Genymobile under the Apache License 2.0. The exact scrcpy license is retained at `tools/scrcpy/LICENSE.txt` and must ship with every distribution.
+OpenDex does not bundle Android Platform Tools, Android USB drivers, or ADB USB transport DLLs. Users must obtain and maintain ADB and any device-specific USB driver through their normal Android device support channel.
 # Third-party notices
 
-OpenDex bundles **scrcpy 4.1** and its Windows runtime dependencies for Windows, including Android Platform Tools components, SDL, FFmpeg libraries, and libusb. scrcpy is provided by Genymobile under the Apache License 2.0. The exact scrcpy license is retained at `tools/scrcpy/LICENSE.txt` and must ship with every distribution.
+OpenDex release installers do not bundle ADB, scrcpy, Android USB drivers, or their runtime libraries. Users download and maintain those components separately from the official Android Platform-Tools and Genymobile scrcpy release pages.
 
-The bundled binaries are redistributed as received from the scrcpy release. Their license and attribution files must remain in the `tools/scrcpy` directory and in packaged resources. Before Store submission, verify the upstream release's complete license inventory for every DLL and executable in that directory and add any missing notices here.
+The `tools/scrcpy` directory is retained for local development only and is not included in release installers.
 
-The bundled distribution also contains components and notices supplied by the official scrcpy release. Do not remove or replace those notices when packaging OpenDex.

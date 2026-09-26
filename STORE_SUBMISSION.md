@@ -4,7 +4,7 @@ OpenDex is designed as a desktop (Win32) application bundled through Tauri. Befo
 
 - Build a signed Windows package with a Partner Center-reserved identity and verified publisher certificate.
 - Provide `PRIVACY.md` as the public privacy-policy URL/content and a real support contact.
-- Keep the included scrcpy license and all required third-party notices in the package.
+- Explain that ADB and scrcpy are external prerequisites and that the installer does not include Android USB drivers or non-Microsoft driver components.
 - Describe the USB/ADB use clearly in the Store listing: a connected Android device and user-approved USB debugging are required.
 - Do not claim Samsung DeX works on every device; it is OEM and firmware dependent.
 - Test install, launch, uninstall, and update on a clean Windows 10/11 machine.

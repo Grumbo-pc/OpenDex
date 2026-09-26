@@ -1,3 +1,4 @@
+- The Windows build includes scrcpy 4.1. Install Android Platform Tools separately and add `adb.exe` to `PATH`, or provide its path in Settings. OpenDex does not install Android USB drivers or redistribute ADB USB transport components.
 # OpenDex
 
 OpenDex is a Windows desktop client for using an Android phone in a desktop-style window over ADB and scrcpy. It can request Samsung-style desktop mode when the device firmware supports it, while retaining normal scrcpy mirroring as a fallback.
@@ -19,7 +20,7 @@ Samsung desktop mode is device- and firmware-dependent. OpenDex is not affiliate
 - An Android device with Developer options and USB debugging enabled
 - A USB connection and an approved Android debugging authorization
 
-The Windows build includes scrcpy 4.1 and compatible ADB files. Do not install or use the bundled tools separately unless you understand their licenses and security implications.
+The Windows build does not bundle ADB or scrcpy. Install Android Platform Tools and scrcpy separately, add both executable folders to `PATH`, or provide both executable paths in Settings.
 
 ## Development
 
@@ -43,7 +44,7 @@ OpenDex stores connection preferences locally and communicates directly with the
 
 ## Third-party software
 
-OpenDex bundles scrcpy and Android platform tools. License and attribution information is available in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and the bundled `tools/scrcpy/LICENSE.txt` file.
+OpenDex does not redistribute ADB or scrcpy in release installers. Download them from the official Android Platform-Tools and Genymobile scrcpy release pages described in [SETUP.md](SETUP.md).
 
 ## License
 

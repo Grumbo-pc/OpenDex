@@ -4,7 +4,7 @@ use std::{env, path::PathBuf, process::Command, sync::{atomic::{AtomicBool, Orde
 #[derive(Serialize)] struct Device { serial: String, state: String, model: String }
 #[derive(Deserialize)] struct Settings { adb_path: String, scrcpy_path: String, resolution: String, max_fps: u16, bitrate: String, desktop_mode: bool, keep_awake: bool }
 fn binary_name(name: &str) -> String { if cfg!(windows) { format!("{name}.exe") } else { name.into() } }
-fn bundled(name: &str) -> Option<PathBuf> { let file = binary_name(name); let dev = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("../tools/scrcpy").join(&file); if dev.is_file() { return Some(dev); } let installed = env::current_exe().ok()?.parent()?.join("resources").join("resources/scrcpy").join(file); installed.is_file().then_some(installed) }
+fn bundled(name: &str) -> Option<PathBuf> { let file = binary_name(name); let dev = PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("../tools/scrcpy").join(&file); if cfg!(debug_assertions) && dev.is_file() { return Some(dev); } None }
 fn exe(config: Option<&str>, name: &str) -> Result<PathBuf, String> {
     if let Some(path) = config.filter(|p| !p.trim().is_empty()) {
         let configured = PathBuf::from(path);
